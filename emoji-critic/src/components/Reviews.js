@@ -1,8 +1,9 @@
 import React from 'react';
+import './Reviews.css';
 
 function AboutMe () {
   return (
-    <div>
+    <div className="reviews">
       <p>
        My reviews will go here!
       </p>
