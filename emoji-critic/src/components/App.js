@@ -3,6 +3,7 @@ import './App.css';
 import Dashboard from './Dashboard';
 import Reviews from './Reviews';
 import AboutMe from './about-me/AboutMe';
+import AboutUs from './about-us/AboutUs';
 import PageNotFound from './PageNotFound';
 
 import { Route, Switch, NavLink } from 'react-router-dom';
@@ -22,6 +23,9 @@ function App() {
           <NavLink className="nav__link" activeClassName="nav__link_active" to="/about-me">
             About Me
           </NavLink>
+          <NavLink to="/about-us">
+            About Us
+          </NavLink>
         </div>
       </nav>
      
@@ -34,6 +38,9 @@ function App() {
         </Route>
         <Route path="/about-me">
           <AboutMe />
+        </Route>
+        <Route path="/about-us">
+          <AboutUs />
         </Route>
         <Route path="*">
           <PageNotFound />
