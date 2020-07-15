@@ -1,3 +1,17 @@
-h1 {
-  text-align: center;
+.nav__header {
+  margin-left: 16px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__links {
+  margin-right: 16px;
+}
+.nav__link {
+  padding: 10px;
+}
+.nav__link_active {
+  color: green;
 }

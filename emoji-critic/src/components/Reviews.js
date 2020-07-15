@@ -1,7 +1,7 @@
 import React from 'react';
 import './Reviews.css';
 
-function AboutMe () {
+function Reviews () {
   return (
     <div className="reviews">
       <p>
@@ -11,4 +11,6 @@ function AboutMe () {
   )
 }
 
-export default AboutMe;
+export default Reviews;
+
+//nesting , positive reviews, negative reviews, classic reviews

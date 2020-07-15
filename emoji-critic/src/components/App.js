@@ -2,18 +2,42 @@ import React from 'react';
 import './App.css';
 import Dashboard from './Dashboard';
 import Reviews from './Reviews';
-import AboutMe from './AboutMe';
+import AboutMe from './about-me/AboutMe';
+import PageNotFound from './PageNotFound';
 
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, NavLink } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <h1>Emoji Critic</h1>
+      <nav className="nav">
+        <h1 className="nav__header">Emoji Critic</h1>
+        <div className="nav__links">
+          <NavLink className="nav__link" activeClassName="nav__link_active" exact to="/" >
+            Home
+          </NavLink>
+          <NavLink className="nav__link" activeClassName="nav__link_active" to="/reviews" >
+            Reviews
+          </NavLink>
+          <NavLink className="nav__link" activeClassName="nav__link_active" to="/about-me">
+            About Me
+          </NavLink>
+        </div>
+      </nav>
+     
       <Switch>
-        <Route exact path="/" component={Dashboard} />
-        <Route path="/reviews" component={Reviews} />
-        <Route path="/about-me" component={AboutMe} />
+        <Route exact path="/">
+          <Dashboard />
+        </Route>
+        <Route path="/reviews">
+          <Reviews />
+        </Route>
+        <Route path="/about-me">
+          <AboutMe />
+        </Route>
+        <Route path="*">
+          <PageNotFound />
+        </Route>
       </Switch>
     </div>
   );
