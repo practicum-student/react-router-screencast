@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Dashboard from './Dashboard';
+import Dashboard from './dashboard/Dashboard';
 import Reviews from './Reviews';
 import AboutMe from './about-me/AboutMe';
 import PageNotFound from './PageNotFound';
