@@ -23,7 +23,7 @@ function App() {
           <NavLink className="nav__link" activeClassName="nav__link_active" to="/about-me">
             About Me
           </NavLink>
-          <NavLink to="/about-us">
+          <NavLink className="nav__link" activeClassName="nav__link_active" to="/about-us">
             About Us
           </NavLink>
         </div>
