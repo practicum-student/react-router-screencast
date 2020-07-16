@@ -1,5 +1,7 @@
 import React from 'react';
 import './AboutUs.css';
+import SiteHistory from './SiteHistory';
+import SiteMission from './SiteMission';
 
 function AboutUs () {
   return (
