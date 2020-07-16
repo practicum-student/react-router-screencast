@@ -12,16 +12,16 @@ function AboutUs () {
       <h2>About us</h2>
       <ul>
         <li>
-          <Link>Site History</Link>
+          <Link to={``}>Site History</Link>
         </li>
         <li>
-          <Link>Site Mission</Link>
+          <Link to={``}>Site Mission</Link>
         </li>
       </ul>
-      <Route>
+      <Route path={``}>
         <SiteHistory />
       </Route>
-      <Route>
+      <Route path={``}>
         <SiteMission />
       </Route>
     </div>
