@@ -8,6 +8,10 @@ function AboutUs () {
   return (
     <div>
       <h2>About us</h2>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
       <Route>
         <SiteHistory />
       </Route>
