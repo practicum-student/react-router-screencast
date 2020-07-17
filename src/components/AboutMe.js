@@ -4,7 +4,7 @@ function AboutMe () {
   return (
     <div>
       <p>
-        About me.
+      I'm just a simple person with a simple dream - to share my emoji expertise with the world!
       </p>
     </div>
   )

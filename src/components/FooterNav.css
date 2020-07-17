@@ -1,0 +1,26 @@
+.footer__menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    min-height: 40px;
+}
+
+.footer__menu li {
+    margin-right: 10px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #9CBBFF;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.footer__link_active {
+    color: #437DFF;
+    pointer-events: none;
+}
+
+.footer__link:last-of-type {
+    margin-right: 0;
+}
