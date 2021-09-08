@@ -6,10 +6,10 @@ import Header from './Header';
 import Content from './Content'
 import Footer from './Footer';
 
-import Home from './Home';
 import AboutMe from './AboutMe';
 import Mission from './Mission';
 import Reviews from './Reviews'
+import Dashboard from './Dashboard'
 
 
 function App() {
@@ -40,11 +40,19 @@ function App() {
         <AboutMe />
       </Content> */}
 
-      <Content>
+      {/* <Content>
         <Reviews />
       </Content>
-      <Footer /> 
-
+      <Footer />  */}
+      <Route path="/">
+        <Dashboard />
+      </Route>
+      <Route path="/reviews">
+        <Reviews />
+      </Route>
+      <Route path="/about-me">
+        <AboutMe />
+      </Route> 
 
     </div>
   );
