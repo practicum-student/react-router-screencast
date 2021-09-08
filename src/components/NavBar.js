@@ -4,9 +4,9 @@ import './NavBar.css';
 function NavBar () {
   return (
     <nav className="menu">
-      <a href="" className="menu__link menu__link_active">Home</a>
-      <a href="" className="menu__link">Emoji Reviews</a>
-      <a href="" className="menu__link">About Me</a>
+      <a href="/" className="menu__link">Home</a>
+      <a href="/reviews" className="menu__link">Emoji Reviews</a>
+      <a href="/about-me" className="menu__link">About Me</a>
     </nav>
   )
 }
