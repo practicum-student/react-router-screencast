@@ -1,17 +1,20 @@
+// index.js
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom'; // importing BrowserRouter
 import App from './components/App';
+import './index.css';
+
+// the import below is beyond the scope of this sprint, don't worry about it yet
 import * as serviceWorker from './serviceWorker';
 
+// we'll wrap the App component inside of BrowserRouter here
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter> 
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
