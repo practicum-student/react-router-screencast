@@ -1,4 +1,4 @@
-# Code for The useEffect Hook Screencast
+# Code for React Router Screencast
 
 ## Installation
 1. `git clone https://github.com/practicum-student/react-router-screencast.git`
